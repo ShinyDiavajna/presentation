@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Define circle center}
+\PYG{n}{circle\PYGZus{}center} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Indicate the center with a point and annotate it}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{circle\PYGZus{}center}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{circle\PYGZus{}center}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{l+s+s1}{\PYGZsq{}ro\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Red point for the center}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{annotate}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}O\PYGZsq{}}\PYG{p}{,} \PYG{n}{xy}\PYG{o}{=}\PYG{n}{circle\PYGZus{}center}\PYG{p}{,} \PYG{n}{xytext}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{),} \PYG{n}{textcoords}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}offset points\PYGZsq{}}\PYG{p}{,} \PYG{n}{fontsize}\PYG{o}{=}\PYG{l+m+mi}{12}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}red\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Identify the topmost vertex of the triangle (assuming it\PYGZsq{}s the first vertex in your data)}
+\PYG{n}{top\PYGZus{}vertex} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x\PYGZus{}triangle}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{y\PYGZus{}triangle}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}
+
+
+
+\end{Verbatim}

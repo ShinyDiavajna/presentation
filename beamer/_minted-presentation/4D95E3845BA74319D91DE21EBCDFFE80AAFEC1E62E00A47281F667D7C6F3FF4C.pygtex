@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}stdlib.h\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}math.h\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZdq{}libs/matfun.h\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZdq{}libs/geofun.h\PYGZdq{}}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{point\PYGZus{}gen}\PYG{p}{(}\PYG{k+kt}{FILE}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{fptr}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{o}{**}\PYG{n}{A}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{o}{**}\PYG{n}{B}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{no\PYGZus{}rows}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{no\PYGZus{}cols}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{num\PYGZus{}points}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{num\PYGZus{}points}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{t}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)}\PYG{n}{i}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{num\PYGZus{}points}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{);}
+\PYG{+w}{        }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{o}{**}\PYG{n}{output}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Matadd}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Matscale}\PYG{p}{(}\PYG{n}{Matsub}\PYG{p}{(}\PYG{n}{B}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{A}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{no\PYGZus{}rows}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{no\PYGZus{}cols}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{no\PYGZus{}rows}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{no\PYGZus{}cols}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{no\PYGZus{}rows}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{no\PYGZus{}cols}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{fprintf}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}lf,\PYGZpc{}lf}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{output}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{][}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{output}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{][}\PYG{l+m+mi}{0}\PYG{p}{]);}
+\PYG{+w}{        }\PYG{n}{freeMat}\PYG{p}{(}\PYG{n}{output}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{no\PYGZus{}rows}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

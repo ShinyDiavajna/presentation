@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{equi\PYGZus{}triangle\PYGZus{}gen}\PYG{p}{(}\PYG{n}{median}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{fptr}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{circle\PYGZus{}point\PYGZus{}gen}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{radius}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{center}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{300}\PYG{p}{);}
+
+\PYG{+w}{    }\PYG{n}{fclose}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

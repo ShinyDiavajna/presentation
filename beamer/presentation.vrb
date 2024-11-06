@@ -1,0 +1,18 @@
+\frametitle{Python Code }
+\begin{minted}[bgcolor=bg, linenos, fontsize=\small, breaklines]{python}
+
+# Draw a line from the center to the top vertex
+plt.plot([circle_center[0], top_vertex[0]], [circle_center[1], top_vertex[1]], 'k--')  # Dashed line
+plt.annotate('2a', xy=((circle_center[0] + top_vertex[0]) / 2, (circle_center[1] + top_vertex[1]) / 2),
+                         fontsize=10, color='black')
+
+# Plot settings
+plt.xlabel("$x$")
+plt.ylabel("$y$")
+plt.title("Equilateral Triangle and Circle")
+plt.grid(True)
+plt.legend(loc="upper right")
+plt.axis('equal')
+plt.show()
+
+\end{minted}
